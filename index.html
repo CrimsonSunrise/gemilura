@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="assets/geminiIcon.webp"
+			type="image/x-icon"
+		/>
+		<title>Gemilura, o seu desenvolvedor front end!</title>
+		<link rel="stylesheet" href="utils/style.css" />
+		<link rel="stylesheet" href="utils/cursor.css" />
+		<link rel="stylesheet" href="utils/fontSparkleEffect.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+		/>
+		<link href="utils/prism.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<img width="300" src="assets/Gemilura.png" alt="Gemilura logo." />
+			<h1>
+				Use sua
+				<span class="magic">
+					<span class="magic-star">
+						<svg viewBox="0 0 512 512">
+							<path
+								d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+							/>
+						</svg>
+					</span>
+					<span class="magic-star">
+						<svg viewBox="0 0 512 512">
+							<path
+								d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+							/>
+						</svg>
+					</span>
+					<span class="magic-star">
+						<svg viewBox="0 0 512 512">
+							<path
+								d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+							/>
+						</svg>
+					</span>
+					<span class="magic-text">curiosidade e criatividade</span>
+				</span>
+				para criar páginas web, designs, banners, protótipos e muito
+				mais!
+			</h1>
+		</header>
+
+		<main>
+			<div class="background-graphics">
+				<div class="square left">
+					<div class="chat" id="chat-history"></div>
+				</div>
+				<div class="square right">
+					<div id="iframe-mask" class="active">
+						<h1 class="magic-loading">
+							<span class="magic">
+								<span class="magic-star">
+									<svg viewBox="0 0 512 512">
+										<path
+											d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+										/>
+									</svg>
+								</span>
+								<span class="magic-star">
+									<svg viewBox="0 0 512 512">
+										<path
+											d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+										/>
+									</svg>
+								</span>
+								<span class="magic-star">
+									<svg viewBox="0 0 512 512">
+										<path
+											d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+										/>
+									</svg>
+								</span>
+								<span class="magic-text" id="loading-message">
+								</span>
+							</span>
+						</h1>
+					</div>
+					<iframe id="meuIframe" src=""></iframe>
+					<div class="preview-menu">
+						<button
+							class="menu-item visualizacao active"
+							onclick="mostrarCodigo(false)"
+						>
+							Visualização
+						</button>
+						<button
+							class="menu-item codigo"
+							onclick="mostrarCodigo(true)"
+						>
+							Código
+						</button>
+					</div>
+					<div class="code-view">
+						<button class="copy-code" onclick="copiarCodigo()">
+							<?xml version="1.0" encoding="utf-8"?><svg
+								version="1.1"
+								id="Layer_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="20px"
+								y="20px"
+								viewBox="0 0 115.77 122.88"
+								style="enable-background: new 0 0 115.77 122.88"
+								xml:space="preserve"
+								stroke="white"
+								strokeWidth="2"
+							>
+								<style type="text/css">
+									.st0 {
+										fill-rule: evenodd;
+										clip-rule: evenodd;
+									}
+								</style>
+								<g>
+									<path
+										class="st0"
+										d="M89.62,13.96v7.73h12.19h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02v0.02 v73.27v0.01h-0.02c-0.01,3.84-1.57,7.33-4.1,9.86c-2.51,2.5-5.98,4.06-9.82,4.07v0.02h-0.02h-61.7H40.1v-0.02 c-3.84-0.01-7.34-1.57-9.86-4.1c-2.5-2.51-4.06-5.98-4.07-9.82h-0.02v-0.02V92.51H13.96h-0.01v-0.02c-3.84-0.01-7.34-1.57-9.86-4.1 c-2.5-2.51-4.06-5.98-4.07-9.82H0v-0.02V13.96v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07V0h0.02h61.7 h0.01v0.02c3.85,0.01,7.34,1.57,9.86,4.1c2.5,2.51,4.06,5.98,4.07,9.82h0.02V13.96L89.62,13.96z M79.04,21.69v-7.73v-0.02h0.02 c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v64.59v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h12.19V35.65 v-0.01h0.02c0.01-3.85,1.58-7.34,4.1-9.86c2.51-2.5,5.98-4.06,9.82-4.07v-0.02h0.02H79.04L79.04,21.69z M105.18,108.92V35.65v-0.02 h0.02c0-0.91-0.39-1.75-1.01-2.37c-0.61-0.61-1.46-1-2.37-1v0.02h-0.01h-61.7h-0.02v-0.02c-0.91,0-1.75,0.39-2.37,1.01 c-0.61,0.61-1,1.46-1,2.37h0.02v0.01v73.27v0.02h-0.02c0,0.91,0.39,1.75,1.01,2.37c0.61,0.61,1.46,1,2.37,1v-0.02h0.01h61.7h0.02 v0.02c0.91,0,1.75-0.39,2.37-1.01c0.61-0.61,1-1.46,1-2.37h-0.02V108.92L105.18,108.92z"
+									/>
+								</g>
+							</svg>
+						</button>
+						<pre>
+                            <code id="code-preview-text" class="language-html">
+                                <html><head><style>p { color: red }</style></head><body><div>abc</div></body></html>
+                            </code>
+                        </pre>
+					</div>
+				</div>
+				<div class="square back-left"></div>
+				<div class="square back-right"></div>
+			</div>
+
+			<div id="prompt-container">
+				<div class="prompt-wrapper">
+					<form id="form" action="">
+						<input
+							id="prompt-input"
+							autocomplete="off"
+							type="text"
+							placeholder="O que vamos criar hoje?"
+							autofocus
+						/>
+						<button type="submit" id="imagine-button">
+							<img
+								src="assets/geminiIcon.webp"
+								alt="Gemini logo"
+								width="20"
+							/>
+						</button>
+					</form>
+				</div>
+				<button
+					onclick="toggleApiKeyInput()"
+					class="alterar-api-key-button active"
+				>
+					alterar chave de api
+				</button>
+				<div class="api-key-wrapper">
+					<p>
+						É necessário uma chave de api gratuita do
+						<strong>Google AI Studio</strong> para que o
+						<strong>Gemilura</strong> funcione.
+					</p>
+					<p>
+						Visite a página do
+						<a
+							href="https://aistudio.google.com/app/apikey"
+							target="_blank"
+							>Google AI Studio</a
+						>
+						para gerar a sua chave de api gratuita e depois cole-a
+						abaixo.
+					</p>
+					<input
+						type="password"
+						id="api-key-input"
+						autocomplete="off"
+						type="text"
+						placeholder="Cole aqui sua chave de api do Google AI Studio"
+						autofocus
+					/>
+					<button
+						class="esconder-input"
+						onclick="toggleApiKeyInput()"
+					>
+						<svg
+							fill="#000000"
+							width="20px"
+							height="20px"
+							viewBox="0 0 256 256"
+							id="Flat"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M208,164a3.98881,3.98881,0,0,1-2.82861-1.17139L128,85.65674,50.82861,162.82861a4.00026,4.00026,0,0,1-5.65722-5.65722l80-80a4.00147,4.00147,0,0,1,5.65722,0l80,80A4,4,0,0,1,208,164Z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="exemplos">
+				<p>Alguns exemplos de prompt</p>
+				<div class="exemplos-list">
+					<div class="exemplo" onclick="promptSugestao(this)">
+						Faça uma wiki com a documentação do html. Importância de
+						SEO, tags e meta tags. Crie seções de exemplo com
+						elementos 📄.
+					</div>
+					<div class="exemplo" onclick="promptSugestao(this)">
+						Crie um site para vender os crochês da minha avó. Faça o
+						mais fofo possível 💕.
+					</div>
+					<div class="exemplo" onclick="promptSugestao(this)">
+						Crie uma rede social de memes com posts divertidos e
+						comentários engraçados 🤣.
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			Feito por
+			<a href="https://github.com/CrimsonSunrise" target="_blank"
+				>Crimson Sunrise</a
+			>
+			para a
+			<a
+				href="https://www.alura.com.br/imersao-dev-google-gemini"
+				target="_blank"
+				>Imersão Alura e Google Gemini</a
+			>.
+		</footer>
+
+		<!-- <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+		<script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script> -->
+		<script src="./utils/prism.js"></script>
+		<script src="./utils/cursor.js"></script>
+		<script src="./utils/fontSparkleEffect.js"></script>
+
+		<script src="./utils/main.js"></script>
+
+		<script type="module">
+			import {
+				getGenerativeModel,
+				scrollToDocumentBottom,
+				updateUI,
+				promptInicial,
+				api_key,
+				changeApiKey,
+			} from "./utils/shared.js";
+
+			// Checar se existe api key no localStorage
+			const localApi = localStorage.getItem("api_key");
+			if (localApi && localApi.length > 35) {
+				changeApiKey(localApi);
+			}
+
+			document.querySelector("#api-key-input").value = api_key;
+
+			document
+				.querySelector("#api-key-input")
+				.addEventListener("keyup", (input) => {
+					if (input.target.value.length >= 35) {
+						changeApiKey(input.target.value);
+						localStorage.setItem("api_key", input.target.value);
+						document
+							.querySelector(".api-key-wrapper")
+							.classList.remove("active");
+						document
+							.querySelector(".alterar-api-key-button")
+							.classList.add("active");
+						document.querySelector("#prompt-input").focus();
+					}
+				});
+
+			function checkApiKey() {
+				console.log(api_key);
+			}
+
+			const promptInput = document.querySelector("#prompt-input");
+			const historyElement = document.querySelector("#chat-history");
+			let chat;
+
+			document
+				.querySelector("#form")
+				.addEventListener("submit", async (event) => {
+					event.preventDefault();
+					const userMessage = promptInput.value;
+
+					if (userMessage.length == 0) {
+						return;
+					}
+
+					document
+						.querySelector(".api-key-wrapper")
+						.classList.remove("active");
+					if (api_key == "" || api_key.length < 35) {
+						// Sem api key
+						console.log("Sem api key");
+						document
+							.querySelector(".api-key-wrapper")
+							.classList.add("active");
+						document.querySelector("#api-key-input").focus();
+						return;
+					} else {
+						// Com api key
+						// console.log("Com api key");
+						const promptLength =
+							document.querySelector("#prompt-input").value
+								.length;
+						if (promptLength > 0) {
+							// Iniciar chatmode e conversar com o modelo
+							toggleChatMode();
+							startLoadingResposta();
+						}
+					}
+
+					if (!chat) {
+						const model = await getGenerativeModel({
+							model: "gemini-1.5-flash",
+						});
+						chat = model.startChat({
+							generationConfig: {
+								// maxOutputTokens: 100,
+							},
+							history: [
+								{
+									role: "user",
+									parts: [
+										{
+											text: promptInicial,
+										},
+									],
+								},
+							],
+						});
+					}
+
+					promptInput.value = "";
+
+					historyElement.innerHTML += `<div class="chat-bubble">
+                                <div class="user">usuário</div>
+                                <blockquote>${userMessage}</blockquote>
+                            </div>
+                            <div class="chat-bubble model-role">
+                                <div class="user">Gemilura</div>
+                                <blockquote></blockquote>
+                            </div>`;
+
+					const resultEls = document.querySelectorAll(
+						".model-role > blockquote"
+					);
+					await updateUI(
+						resultEls[resultEls.length - 1],
+						() => chat.sendMessageStream(userMessage),
+						true
+					);
+				});
+		</script>
+	</body>
+</html>
