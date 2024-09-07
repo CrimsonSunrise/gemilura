@@ -1,5 +1,3 @@
-Aqui está um exemplo de documentação para o seu projeto, baseado no conteúdo fornecido:
-
 ```markdown
 # Gemilura: O Seu Desenvolvedor Front-end Automático!
 
